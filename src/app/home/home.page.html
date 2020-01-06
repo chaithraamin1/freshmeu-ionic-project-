@@ -1,0 +1,558 @@
+<ion-header>
+
+  <ion-toolbar>
+
+    <ion-row>
+      <ion-col size-lg="2">
+        <ion-img src="assets/freshmeulogo.jpg" class="delivery" class="logo"> </ion-img>
+      </ion-col>
+      <ion-col size-lg="3">
+        <p>Delivery to: </p>
+        <p class="address">Bangalore</p>
+      </ion-col>
+      <ion-col size-lg="3"></ion-col>
+      <ion-col size-lg="2">
+        <p class="mousehover" (click)="bulkorder()">Bulk Party Order</p>
+
+      </ion-col>
+      <ion-col size-lg="1">
+        <p class="logout" (click)="logout()">Logout</p>
+      </ion-col>
+      <ion-col size-lg="1">
+        <ion-icon name="cart" class="cart-icon" size="large" (click)="openNav()"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <div class="d1">
+      <ion-img class="cart-empty" src="assets/biryanilogo.PNG"></ion-img>
+      <h2 class="cart-content">Your cart is empty</h2>
+      <p class="cart-content">Select item from menu</p>
+
+    </div>
+
+  </div>
+  <div id="main">
+    <ion-slides pager="true" [options]="slideOpts">
+
+
+      <ion-slide *ngFor="let item of [].constructor(4)">
+        <ion-row>
+         
+          <ion-col size-lg="6">
+
+            <img src="assets/pexels-photo-1234535 (1).jpeg " class="banner">
+             <!-- <ion-button  color="danger" class=" top-right" shape="round" (click)="MoreDetailsPage()">ORDER NOW</ion-button> -->
+          </ion-col>
+          <ion-col size-lg="6">
+            <img src="assets/chillipaneer.jpg" class="banner">
+
+
+          </ion-col>
+      
+        </ion-row>
+
+      </ion-slide>
+
+
+
+    </ion-slides>
+
+
+
+
+
+    <ion-row>
+      <ion-col size="12" size-lg="4" size-xs="12">
+        <h1 style="margin-top: 60px; margin-left: 40px;"><b>TOP SELLING DISHES</b></h1>
+      </ion-col>
+      <ion-col size="12" size-lg="8">
+        <hr>
+      </ion-col>
+    </ion-row>
+
+
+
+
+
+    <ion-row>
+      <ion-col size="12" size-xs="3" size-lg="2">
+        <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-xs="9" size-lg="2">
+        <p class="Northern">NORTHERN</p>
+      </ion-col>
+      <ion-col size="12" size-xs="3" size-lg="2">
+        <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-xs="9" size-lg="2">
+        <p class="Northern">NORTHERN</p>
+      </ion-col>
+      <ion-col size="12" size-xs="3" size-lg="2">
+        <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-xs="9" size-lg="2">
+        <p class="Northern">NORTHERN</p>
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row>
+      <ion-col size="12" size-lg="4">
+        <div class="container">
+          <ion-img src="assets/pexels-photo-461198.jpeg" class="itemimg image"></ion-img>
+          <div class="middle">
+            <div class="text" (click)="MoreDetailsPage()">More Details</div>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size="12" size-lg="4">
+        <div class="container">
+          <ion-img src="assets/pexels-photo-461198.jpeg" class="itemimg image" ></ion-img>
+          <div class="middle">
+            <div class="text" (click)="MoreDetailsPage()">More Details</div>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size="12" size-lg="4">
+        <div class="container">
+          <ion-img src="assets/pexels-photo-221143.jpeg" class="itemimg image"></ion-img>
+          <div class="middle">
+            <div class="text" (click)="MoreDetailsPage()">More Details</div>
+          </div>
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+
+
+
+    <ion-row>
+      <ion-col size="12" size-lg="4" size-sm="6">
+        <p class="item-content">Pasta Masala</p>
+      </ion-col>
+      <ion-col size="12" size-lg="4" size-sm="6">
+        <p class="item-content">Pasta Masala</p>
+      </ion-col>
+      <ion-col size="12" size-lg="4" size-sm="6">
+        <p class="item-content">Pasta Masala</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+
+
+
+
+
+
+
+
+    <ion-row>
+      <ion-col size="12" size-xs="3" size-lg="2">
+        <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-xs="9" size-lg="2">
+        <p class="Northern">NORTHERN</p>
+      </ion-col>
+      <ion-col size="12" size-xs="3" size-lg="2">
+        <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-xs="9" size-lg="2">
+        <p class="Northern">NORTHERN</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" size-lg="4">
+        <div class="container">
+          <ion-img src="assets/pexels-photo-461198.jpeg" class="itemimg image"></ion-img>
+          <div class="middle">
+            <div class="text" (click)="MoreDetailsPage()">More Details</div>
+          </div>
+        </div>
+      </ion-col>
+
+      <ion-col size="12" size-lg="4">
+        <div class="container">
+          <ion-img src="assets/pexels-photo-461198.jpeg" class="itemimg image"></ion-img>
+          <div class="middle">
+            <div class="text" (click)="MoreDetailsPage()">More Details</div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" size-lg="4" size-sm="6">
+        <p class="item-content">Pasta Masala</p>
+      </ion-col>
+      <ion-col size="12" size-lg="4" size-sm="6">
+        <p class="item-content">Pasta Masala</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+
+        <ion-button color="#f08241;">Add</ion-button>
+
+      </ion-col>
+    </ion-row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ion-row>
+      <ion-col size="12" size-lg="4" size-xs="12">
+        <h1 style="margin-top: 60px; margin-left: 40px;"><b>FRESHMENU DAILY</b></h1>
+      </ion-col>
+      <ion-col size="12" size-lg="8">
+        <hr>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" size-xs="3" size-lg="2">
+        <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-xs="9" size-lg="2">
+        <p class="Northern">NORTHERN</p>
+      </ion-col>
+      <ion-col size="12" size-xs="3" size-lg="2">
+        <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-xs="9" size-lg="2">
+        <p class="Northern">NORTHERN</p>
+      </ion-col>
+      <ion-col size="12" size-xs="3" size-lg="2">
+        <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-xs="9" size-lg="2">
+        <p class="Northern">NORTHERN</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" size-lg="4" *ngFor="let item of [].constructor(3)">
+        <div class="container">
+          <ion-img src="assets/vegpulav.JPG" class="itemimg image" ></ion-img>
+          <div class="middle">
+            <div class="text" (click)="moredetail()">More Details</div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" size-lg="4" size-sm="6" *ngFor="let item of [].constructor(3)">
+        <p class="item-content">Pulav</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+
+
+
+    <ion-row>
+      <ion-col size="12" size-lg="4" size-xs="12">
+        <h1 style="margin-top: 60px; margin-left: 40px;"><b>NON VEG DAILY</b></h1>
+      </ion-col>
+      <ion-col size="12" size-lg="8">
+        <hr>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" size-xs="3" size-lg="2">
+        <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-xs="9" size-lg="2">
+        <p class="Northern">NORTHERN</p>
+      </ion-col>
+      <ion-col size="12" size-xs="3" size-lg="2">
+        <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-xs="9" size-lg="2">
+        <p class="Northern">NORTHERN</p>
+      </ion-col>
+      <ion-col size="12" size-xs="3" size-lg="2">
+        <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-xs="9" size-lg="2">
+        <p class="Northern">NORTHERN</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" size-lg="4" *ngFor="let item of [].constructor(3)">
+        <div class="container">
+          <ion-img src="assets/chicken.JPG" class="itemimg image"></ion-img>
+          <div class="middle">
+            <div class="text" (click)="moredetails1()">More Details</div>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size="12" size-lg="4" size-sm="6" *ngFor="let item of [].constructor(3)">
+        <p class="item-content">Chicken Masala</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row>
+      <ion-col size="12" size-lg="4" size-xs="12">
+        <h1 style="margin-top: 60px; margin-left: 40px;"><b>WANDERCRUST PIZZAS</b></h1>
+      </ion-col>
+      <ion-col size="12" size-lg="8">
+        <hr>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col size="12" size-xs="3" size-lg="2">
+          <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+        </ion-col>
+        <ion-col size="12" size-xs="9" size-lg="2">
+          <p class="Northern">NORTHERN</p>
+        </ion-col>
+        <ion-col size="12" size-xs="3" size-lg="2">
+          <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+        </ion-col>
+        <ion-col size="12" size-xs="9" size-lg="2">
+          <p class="Northern">NORTHERN</p>
+        </ion-col>
+        <ion-col size="12" size-xs="3" size-lg="2">
+          <ion-img src="assets/veglogo.jpg" class="veglogo"></ion-img>
+        </ion-col>
+        <ion-col size="12" size-xs="9" size-lg="2">
+          <p class="Northern">NORTHERN</p>
+        </ion-col>
+      </ion-row>
+  
+    <ion-row>
+      <ion-col size="12" size-lg="4" *ngFor="let item of [].constructor(3)">
+        <div class="container">
+
+          <ion-img src="assets/pizza.jpg" class="itemimg image"></ion-img>
+          <div class="middle">
+            <div class="text" (click)="moredetail2()">More Details</div>
+          </div>
+        </div>
+      </ion-col>
+
+
+
+      <ion-col size="12" size-lg="4" size-sm="6" *ngFor="let item of [].constructor(3)">
+        <p class="item-content">Peppy Paneer Pizza (9")</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <p class="item-price">&#8377;100</p>
+      </ion-col>
+      <ion-col size="12" size-lg="2" size-sm="6">
+        <ion-button color="#f08241;">Add</ion-button>
+      </ion-col>
+    </ion-row>
+    <!-- <footer> -->
+
+    <hr>
+
+    <div class="margin">
+      <ion-row>
+        <ion-col size-lg="2">
+          <h6 class="footerheader">COMPANY</h6>
+        </ion-col>
+        <ion-col size-lg="3">
+          <h6 class="footerheader">HELP AND CONTACT</h6>
+        </ion-col>
+        <ion-col size-lg="2">
+          <h6 class="footerheader">MORE FROM US</h6>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-lg="2">
+          <p class="firstrow">FAQ</p>
+        </ion-col>
+        <ion-col size-lg="3">
+          <p class="firstrow">About</p>
+        </ion-col>
+        <ion-col size-lg="2">
+          <p class="firstrow">Careers</p>
+        </ion-col>
+
+      </ion-row>
+      <ion-row>
+        <ion-col size-lg="2">
+          <p class="firstrow">Blog</p>
+        </ion-col>
+        <ion-col size-lg="3">
+          <!-- <ion-icon name="call"></ion-icon> -->
+          <p class="firstrow">89788778</p>
+          <!-- <a class="item item-icon-left" href="#">
+        <i class="icon ion-email"></i>
+        Check mail
+      </a>
+     -->
+        </ion-col>
+
+
+        <ion-col size-lg="2">
+          <p class="firstrow">Careers</p>
+        </ion-col>
+
+      </ion-row>
+
+    </div>
+    <div class="footer" style="background-color: black;">
+
+      <div class="margin">
+        <ion-row>
+          <ion-col size-lg="2">
+            <p class="f1">Categories</p>
+          </ion-col>
+          <ion-col size-lg="2">
+            <p class="f1">Cusies</p>
+          </ion-col>
+          <ion-col size-lg="2">
+            <p class="f1">Profile</p>
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col size-lg="2">
+            <p class="f2">Chinese</p>
+          </ion-col>
+          <ion-col size-lg="2">
+            <p class="f2">Italian</p>
+          </ion-col>
+          <ion-col size-lg="2">
+            <p class="f2">American</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size-lg="2">
+            <p class="f2">Indian</p>
+          </ion-col>
+          <ion-col size-lg="2">
+            <p class="f2">Mexican</p>
+          </ion-col>
+          <ion-col size-lg="2">
+            <p class="f2">Thai</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size-lg="2">
+            <p class="f2">Indian</p>
+          </ion-col>
+          <ion-col size-lg="2">
+            <p class="f2">Mexican</p>
+          </ion-col>
+          <ion-col size-lg="2">
+            <p class="f2">Thai</p>
+          </ion-col>
+        </ion-row>
+
+
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- </ion-grid> -->
+</ion-content>

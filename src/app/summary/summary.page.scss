@@ -1,0 +1,314 @@
+.h-100 {
+    height: 100%;
+    width: 100%;
+}
+
+.primary-bg {
+    background-color: #e9ecee;
+}
+.btnback{
+    background-color:#c3503e;
+   margin-left: 60px;
+}
+
+.cart_item {
+    font-size: 20px;
+    font-weight: 600;
+    color: #282c3f;
+    display: inline;
+}
+.ion-content
+{
+    padding:0px 13px 0px;
+}
+.btn{
+
+    margin-top: 20px;
+
+}
+.bill_details {
+    font-size: 12px;
+    font-weight: 700;
+    color: #282c3f;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    
+    margin-left: 8px;
+}
+
+.menu_button {
+    display: inline;
+    position: absolute;
+    width: 90px;
+    margin: 4px 0px -12px 30%;
+
+}
+
+.h-details {
+    height: 85%;
+    margin: 15px 0px 0px 0px;
+}
+
+.img {
+    width: 20px;
+    display: inline-block;
+    padding: 12px 0px;
+}
+
+.menu_content {
+    margin: 12px;
+    color: #282c3f;
+    display: inline;
+    font-size: 13px;
+    position: absolute
+}
+
+.menu_item {
+    margin: 10px 2px 25px;
+    height: 30px;
+
+}
+
+.amount {
+    position: absolute;
+    font-size: 80%;
+    width: 50%;
+    font-weight: 400;
+    margin-left: 104px;
+    margin-top: 8px;
+}
+
+.addremove {
+    height: 18px;
+    width: 15px;
+}
+
+.small {
+    --width: 10px;
+    --height: 10px;
+}
+
+.card {
+    position: relative;
+    width: 47%;
+    margin: 0 15px 25px 0;
+    cursor: pointer;
+    height: 245px;
+}
+
+.dash-box {
+    border: 1px dashed #a9abb2;
+    color: #535665;
+    font-size: 14px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 15px;
+    margin: 20px 0 15px;
+    font-weight: 500;
+    height: 55px;
+}
+
+.delivery {
+    font-size: 15px;
+    color: #60b246;
+}
+
+.topay {
+    font-size: 15px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.cart_item_div {
+    cursor: pointer;
+    padding: 20px 30px 10px 30px;
+    background: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 65px;
+}
+
+.card-div {
+    margin-left: 35px;
+    margin-top: -20px;
+    height: 190px;
+}
+
+.delivery-p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #282c3f;
+    display: inline;
+}
+
+
+
+.card-header {
+    display: inline;
+    font-size: 17px;
+    font-weight: 500;
+    color: #282c3f;
+    border: none;
+    background-color: white;
+    text-transform: capitalize;
+}
+
+.card-icon {
+    margin: 15px 2px 0px 13px;
+    zoom: 1.2
+}
+
+.divspan {
+    display: block;
+    font-size: 16px;
+    color: #7e808c;
+    font-weight: 400;
+    margin: -8px 0px 36px 0px;
+}
+
+.main-icon {
+    zoom: 1.4;
+}
+
+
+
+@media (max-width:449px) {
+    .h-details {
+        height: 100%;
+        margin: auto;
+    }
+
+
+    .cart_item_div {
+        display: none
+    }
+
+    .delivery {
+        font-size: 12px;
+        color: #60b246;
+    }
+
+    .topay {
+        font-size: 12px;
+        font-weight: 700;
+        color: #282c3f;
+    }
+    .main-content
+    {
+        margin: 19px 3px 0px 0px;
+    }
+    .dash-box {
+        border: 1px dashed #a9abb2;
+        color: #535665;
+        font-size: 14px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 15px;
+        margin: 15px 0 10px;
+        font-weight: 500;
+        height: 40px;
+    }
+
+    .sm-address {
+        height: 50px;
+    }
+
+}
+
+@media (min-width:450px) and (max-width:764px) {
+    .h-details {
+        height: 95%;
+        margin: auto;
+    }
+
+    .cart_item_div {
+        display: none
+    }
+
+    .delivery {
+        font-size: 12px;
+        color: #60b246;
+    }
+
+    .topay {
+        font-size: 12px;
+        font-weight: 700;
+        color: #282c3f;
+    }
+
+
+}
+
+@media (max-width:1274px) {
+    .card {
+        position: relative;
+        width: 96%;
+        margin: 0 15px 25px 0;
+        cursor: pointer;
+        height: 245px;
+    }
+
+}
+
+@media (max-width:865px) {
+    .delivery-p {
+        font-size: 25px;
+        font-weight: 600;
+        color: #282c3f;
+        display: inline;
+    }
+
+    .main-icon {
+        zoom: 1.2;
+    }
+
+    .divspan {
+        display: block;
+        font-size: 13px;
+        color: #7e808c;
+        font-weight: 400;
+        margin: -8px 0px 36px 0px;
+    }
+}
+
+
+@media(min-width:750px) {
+    .sideNavBar {
+        display: none;
+    }
+
+
+
+    .NavBar {
+        display: block;
+    }
+
+    .h-100 {
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+@media(max-width:991px) and(min-width:456px) {
+    .h-details {
+        height: 95%;
+        margin: auto;
+    }
+}
+
+@media(max-width:750px) {
+    .sideNavBar {
+        display: block;
+    }
+
+    .NavBar {
+        display: none;
+    }
+}

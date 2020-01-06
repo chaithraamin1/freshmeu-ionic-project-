@@ -1,0 +1,131 @@
+.h-100 {
+    height: 100%;
+   
+}
+
+.bg-login {
+    background-repeat: no-repeat;
+    height: 100%;
+    opacity: 0.8;
+    width: 100%;
+}
+.user-signup
+{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size:14px;
+}
+
+#wrapper {
+   
+    display: flex;
+    justify-content: center;
+  }
+  h2 {
+    line-height: 2.66;
+    margin: 32px;
+    padding: 0;
+    height: 65px;
+    text-align: center;
+    color: #67544e;
+    font-size: 32px;
+    font-family: quiroh, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+.formInput {
+    padding: 0px 20px 10px 20px;
+    color: #67544e;
+}
+
+.fontstyle {
+    font-family: quiroh, sans-serif;
+
+}
+
+h2 {
+    line-height: 2.66;
+    margin: 32px;
+    padding: 0;
+    height: 65px;
+    text-align: center;
+    color: #67544e;
+    font-size: 32px;
+    font-family: quiroh, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+.signinbtn
+{
+    margin-left: 31px;
+    margin-top: 57px;
+    background-color: crimson;
+}
+$backgroun-primary:crimson;
+  ion-button {
+    background-color: $backgroun-primary;
+    width:100px;
+    
+
+}
+.md-col-height {
+    height: 70%;
+}
+
+.md-col-height_signin {
+    height: 70%;
+}
+
+.skip{
+   text-align: center;
+}
+
+@media (min-width:0px) and (max-width:768px) {
+    .md-height {
+      
+        // background-image: url( " assets/veggi.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        opacity: 0.5;
+    }
+
+    h2 {
+        line-height: 2.66;
+        margin: 32px;
+        padding: 0;
+        height: 45px;
+        text-align: center;
+        color: #67544e;
+        font-size: 32px;
+        font-family: quiroh, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    .md-col-height {
+        height: 70%;
+        opacity: 0.8;
+    }
+
+    .md-col-height_signin {
+        height: 60%;
+        opacity: 0.8;
+    }
+
+}
+
+@media (min-height:700px) and (max-width:450px) {
+    .md-col-height {
+        height: 65%;
+        opacity: 0.8;
+    }
+
+    .md-col-height_signin {
+        height: 50%;
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,38 @@
+
+
+<ion-content>
+
+    <ion-grid class="h-100  ion-no-padding" style="font-family: quiroh, sans-serif;">
+        <ion-row class="h-100 md-height ion-align-items-center ion-justify-content-center"
+            style="background-color:#e9ecee">
+            <ion-col size-md="2" size-sm="3" size-xs="1" size-lg="2"></ion-col>
+            <ion-col size-md="8" size-sm="6" size-xs="10" size-lg="8">
+                <ion-row class="h-100 ion-align-items-center ion-justify-content-center" style="background: white">
+                    <ion-col size-lg="6" class="h-100 ion-no-padding">
+                        <img src="assets/frontpagepng2.jpeg" class="bg-login">
+                    </ion-col>
+                    <ion-col size-lg="6" style="height: 100%;">
+                        <h2>Signin</h2>
+
+                                          <ion-item>
+                                    <ion-label position="floating" class="fontstyle">
+                                    
+                                              <ion-icon class="name" name="call"></ion-icon>
+                                              <small> Phone Number</small>
+                                              <ion-text color="danger"> *</ion-text>
+                                            </ion-label>
+                                            <ion-input></ion-input>
+                                          </ion-item>
+                                          <div id="wrapper">
+                                          <ion-button class="signinbtn" color="crimson;" (click)="login()">Signin</ion-button>
+                                          </div>
+                                          <p>New User?<a (click)="signuppage()">Signup</a></p>
+                                        </ion-col>
+                                    </ion-row>
+                                   
+                            </ion-col>
+                            <ion-col size-md="2" size-sm="3" size-xs="1" size-lg="2"></ion-col>
+                </ion-row>
+            
+    </ion-grid>
+</ion-content>

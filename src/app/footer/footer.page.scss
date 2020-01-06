@@ -1,0 +1,47 @@
+.footer
+{
+    margin-top: 300px;
+    width: 100%;
+    height: 50%;
+    
+}
+p
+{
+    color: white;
+}
+.content
+{
+    font-size: 12px;
+    color: gray;
+}
+// .margin
+// {
+//     margin-left: 40px;
+// }
+hr { 
+    border-style: inset;
+    border-width: 1px;
+    width: 100%;
+    color: gray;
+    margin-top: 79px;
+    margin-right: 168px;
+  } 
+  h5{
+      color:gray;
+  }
+  body{
+      overflow:scroll;
+  }
+  .showme {
+    display: none;
+
+  }
+  
+  .showhim:hover .showme {
+    display: block;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 2px 3px 5px 2px;
+   
+  }
